@@ -1,0 +1,18 @@
+- Comandos para crear el proyecto: 
+mkvirtualenv multitenancy
+pip install Django==1.8
+pip install psycopg2
+django-admin startproject multitenancy
+python manage.py startapp customers
+
+Escribir modelo Client y escribit settings segun el tutorial de tenant-schemas
+pip install django-tenant-schemas
+python manage.py makemigrations customers
+python manage.py migrate_schemas
+
+- Ideas:
+Mostrar pantallazo pgadmin conforme se ha creado la tabla Client en el esquema public
+Mostrar como cambiar de tenant en python con django.connection
+Hacer una vista que haga el alta de un tenant
+Crear una app especifica para cada tenant con una api rest
+Tocar dnsmasq para poder probar en local las urls propias
