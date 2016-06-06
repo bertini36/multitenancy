@@ -1,3 +1,4 @@
-# multitenancy
-Ejemplo de aplicación multi-tenant en Django utilizando la aplicación Django Tenant Schemas
+## Multitenancy
+
+Multi-Tenant application example written in Python with Django and Django Tenant Schemas
 
